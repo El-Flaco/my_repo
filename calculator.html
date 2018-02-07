@@ -13,6 +13,11 @@
         var number = getElementById("number1");
         number.value = Math.sin(number * Math.PI);
       }
+
+      function quadratic() {
+        var number = getElementById("number1");
+        number.value = Math.pow(number.value, 4);
+      }
     </script>
   </head>
   <body>
@@ -23,8 +28,13 @@
     <button onclick="cube()"> 
       x <sup>3</sup> 
     </button>
+
     <button onclick="sine()">
       sin(x)
+    </button>
+
+    <button onclick="quadratic()">
+      x <sup>4</sup>
     </button>
   </body>
 </html>
